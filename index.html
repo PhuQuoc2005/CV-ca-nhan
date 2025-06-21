@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Giới Thiệu Cá Nhân Của Bạn</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-grid">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-text="Trang chủ">
+                        <div class="nav-box">
+                            <i class="fas fa-home"></i>
+                            <span class="nav-label">Trang chủ</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-text="Thông tin cá nhân">
+                        <div class="nav-box">
+                            <i class="fas fa-user"></i>
+                            <span class="nav-label">Thông tin cá nhân</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-text="Kỹ năng">
+                        <div class="nav-box">
+                            <i class="fas fa-cogs"></i>
+                            <span class="nav-label">Kỹ năng</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link" data-text="Dự án">
+                        <div class="nav-box">
+                            <i class="fas fa-project-diagram"></i>
+                            <span class="nav-label">Dự án</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-text="Liên hệ">
+                        <div class="nav-box">
+                            <i class="fas fa-envelope"></i>
+                            <span class="nav-label">Liên hệ</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-content">
+                <div class="profile-pic-container animate-fade-in">
+                    <img src="/images/Profile.png" alt="Ảnh đại diện của bạn" class="profile-pic">
+                </div>
+                <h1 class="animate-zoom-in">Chào mừng đến với thế giới của tôi.</h1>
+                <p class="animate-typewriter delay-1">Nơi những ý tưởng trở thành hiện thực.</p>
+                <div class="social-links animate-fade-in delay-2">
+                    <a href="https://www.facebook.com/quocgod" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://github.com/PhuQuoc2005" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/p_quocdz/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section content-section">
+            <h3 class="section-title">Về tôi</h3>
+            <div class="about-info-grid">
+                <div class="info-item animate-fade-in">
+                    <i class="fas fa-user-circle"></i>
+                    <p><strong>Tên:</strong> Trần Phú Quốc</p>
+                </div>
+                <div class="info-item animate-fade-in delay-1">
+                    <i class="fas fa-birthday-cake"></i>
+                    <p><strong>Ngày tháng năm sinh:</strong> 20/08/2005</p>
+                </div>
+                <div class="info-item animate-fade-in delay-2">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><strong>Quê quán:</strong> TP.Phan Thiết, tỉnh Bình Thuận</p>
+                </div>
+                <div class="info-item animate-fade-in delay-3">
+                    <i class="fas fa-graduation-cap"></i>
+                    <p><strong>Nghề nghiệp:</strong> Sinh viên</p>
+                </div>
+                <div class="info-item animate-fade-in delay-4">
+                    <i class="fas fa-venus-mars"></i>
+                    <p><strong>Giới tính:</strong> Nam</p>
+                </div>
+                <div class="info-item animate-fade-in delay-5">
+                    <i class="fas fa-medal"></i>
+                    <p><strong>Thành tựu:</strong> Đạt huy chương bạc môn võ toàn thành phố 2021-2022</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section content-section">
+            <h3 class="section-title">Kỹ năng</h3>
+            <div class="skills-grid">
+                <div class="skill-item" data-level="70" data-skill-name="HTML5">HTML5</div>
+                <div class="skill-item" data-level="70" data-skill-name="CSS3">CSS3</div>
+                <div class="skill-item" data-level="70" data-skill-name="JavaScript">JavaScript</div>
+                <div class="skill-item" data-level="70" data-skill-name="Node.js">Node.js</div>
+                <div class="skill-item" data-level="70" data-skill-name="SQL">SQL</div>
+            </div>
+            <p class="skills-note">Bấm vào từng kỹ năng để xem chi tiết mức độ.</p>
+
+            <div id="skill-detail-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h3 class="modal-title" id="skill-modal-title">Mức độ Kỹ năng</h3>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-item">
+                            <span id="skill-name-display"></span>
+                            <div class="skill-bar-outer">
+                                <div class="skill-bar-inner" id="current-skill-bar" data-level="0"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section content-section">
+            <h3 class="section-title">Dự án của tôi</h3>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-title="Thiết kế web bán đồ ăn vặt" data-description="Dự án website thương mại điện tử chuyên bán đồ ăn vặt, tối ưu giao diện người dùng và tích hợp các chức năng đặt hàng, quản lý giỏ hàng.">
+                    <img src="/images/Doanvat.png" alt="Dự án Web bán đồ ăn vặt">
+                    <h3>Web Bán Đồ Ăn Vặt</h3>
+                    <p>Website thương mại điện tử với giao diện thân thiện, dễ sử dụng.</p>
+                </div>
+                <div class="portfolio-item" data-title="Thiết kế trang web bán đồ điện tử" data-description="Dự án xây dựng trang web chuyên bán các mặt hàng điện tử, bao gồm hệ thống tìm kiếm sản phẩm, quản lý danh mục và trang chi tiết sản phẩm.">
+                    <img src="/images/Đoientu.png" alt="Dự án Web bán đồ điện tử">
+                    <h3>Web Bán Đồ Điện Tử</h3>
+                    <p>Trang web mua sắm đồ điện tử với tính năng lọc và tìm kiếm mạnh mẽ.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section content-section">
+            <h3 class="section-title">Liên hệ</h3>
+            <p>Bạn có thể liên hệ với tôi qua email hoặc các kênh mạng xã hội dưới đây.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Tên của bạn" required>
+                <input type="email" placeholder="Email của bạn" required>
+                <textarea placeholder="Tin nhắn của bạn" rows="5" required></textarea>
+                <button type="submit">Gửi tin nhắn</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:tranphuquoc10c1@gmail.com">tranphuquoc10c1@gmail.com</a></p>
+                <p>Điện thoại: <a href="tel:0848873559">0848873559</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Trần Phú Quốc.</p>
+    </footer>
+
+    <div id="portfolio-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
